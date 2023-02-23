@@ -23,6 +23,6 @@ class LogFragment : Fragment() {
         val handler = Handler()
         handler.postDelayed({
             findNavController().navigate(R.id.homeFragment)
-        }, 200)
+        }, 2000)
     }
 }
