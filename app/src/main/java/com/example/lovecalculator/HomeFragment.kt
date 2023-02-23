@@ -33,10 +33,13 @@ class HomeFragment : Fragment() {
                 override fun onResponse(call: Call<LoveModel>, response: Response<LoveModel>) {
                     if (response.isSuccessful) {
                         findNavController().navigate(
-                            R.id.resultFragment, bundleOf(
+                            R.id.scoreFragment, bundleOf(
                                 "model" to response.body()
                             )
                         )
+                    }else{
+                        binding.etFname.error = "Введите имя"
+                        binding.etSname.error = "Введите имя"
                     }
                 }
                 override fun onFailure(call: Call<LoveModel>, t: Throwable) {

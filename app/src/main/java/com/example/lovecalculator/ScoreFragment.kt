@@ -1,3 +1,4 @@
+
 package com.example.lovecalculator
 
 import android.os.Bundle
@@ -18,7 +19,7 @@ class ScoreFragment : Fragment() {
         binding = FragmentScoreBinding.inflate(inflater, container, false)
         return binding.root
     }
-
+    @Suppress("DEPRECATION")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val model = arguments?.getSerializable("model") as LoveModel

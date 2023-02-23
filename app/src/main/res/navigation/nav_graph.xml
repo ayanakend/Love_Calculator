@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/warningFragment">
+    app:startDestination="@id/logFragment">
 
     <fragment
         android:id="@+id/homeFragment"
@@ -11,12 +11,12 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/resultFragment"
+        android:id="@+id/scoreFragment"
         android:name="com.example.lovecalculator.ScoreFragment"
         android:label="fragment_score"
         tools:layout="@layout/fragment_score" />
     <fragment
-        android:id="@+id/warningFragment"
+        android:id="@+id/logFragment"
         android:name="com.example.lovecalculator.LogFragment"
         android:label="fragment_warning"
         tools:layout="@layout/fragment_log" />
